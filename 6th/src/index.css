@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: sans-serif
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader{
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container{
+  max-width: 80%;
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 300px;
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card__img{
+  height: 60px;
+  width: 60px;
+}
+
+.hourly__list{
+  padding: 0;
+}
