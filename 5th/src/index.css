@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 5px solid #444;
+  border-radius: 10px;
+}
+
+.todo__list{
+  padding: 0;
+  border: 5px solid #444;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+}
+
+.todo__list--item{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.add__btn, .delete__btn{
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+@media (max-width:550px){
+  .container{
+    margin: 0 0.2rem;
+  }
+  .head{
+    padding: 0.5rem;
+  }
+  .head, .todo__list{
+    border-width: 3px;
+  }
+  .add__btn{
+    margin-left: 0;
+  }
+  .todo__list--item{
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+}
